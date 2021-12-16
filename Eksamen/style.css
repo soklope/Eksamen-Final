@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0px;
+    background-color: #303030;
+    max-width: 1920px;
+    margin: auto;
+    min-width: 320px;
+}
+
+.container1 {
+    text-align: center;
+    display: grid;
+    margin-bottom: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 812px 40px 200px auto 40px;
+    grid-template-areas:
+    "i i i"
+    "o o o"
+    "pf pf pf"
+    "ob ob ob"
+    "p p p"
+    ;
+}
+
+.container1 > div > div {
+    background-color: #00ff0000;
+    display: flex;
+    justify-content: center;
+    padding-top: 350px;
+    padding-left: 30%;
+    padding-right: 30%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.container2 {
+    padding-top: 20px;
+    text-align: center;
+    display: grid;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(18, auto);
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas:
+    "b1 b1 b1"
+    "b2 b2 b2"
+    "t1 t1 t1"
+    "b3 b3 b3"
+    "b4 b4 b4"
+    "t2 t2 t2"
+    "b5 b5 b5"
+    "b6 b6 b6"
+    "t3 t3 t3"
+    "vi vi vi"
+    "vo vo vo"
+    "t4 t4 t4"
+    "b7 b7 b7"
+    "b8 b8 b8"
+    "t5 t5 t5"
+    "b9 b9 b9"
+    "b10 b10 b10"
+    "t6 t6 t6"
+    ;
+}
+
+.container2 div p {
+    color: white;
+    font-family: Comfortaa;
+    font-size: clamp(20px, 1.2vw, 40px);
+    text-align: left;
+    padding: 10px;
+}
+
+.container2 a {
+    color: #f9b55f;
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+.box3 {
+    text-align: center;
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas:
+    "k k k"
+    "ki ki ki"
+    "ba ba ba"
+    ;
+}
+
+.back-to-top {
+    background-color: bisque;
+    grid-area: ba;
+}
+
+.headline {
+    font-family: Montserrat;
+    color: #f9b55f;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #303030;
+    position: fixed;
+    width: 100%;
+    max-width: 1920px;
+    height: 60px;
+    text-align: center;
+    min-width: 300px;
+    padding-left: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Comfortaa";
+    font-weight: 300;
+    font-size: clamp(20px, 1.2vw, 35px);
+    padding-top: 10px;
+}
+
+.nav a:hover {
+    color: white;
+    text-shadow:
+    0 0 7px rgb(255, 196, 0),
+    0 0 10px rgb(255, 81, 0),
+    0 0 21px rgb(255, 115, 0),
+    0 0 42px rgb(255, 136, 0),
+    0 0 82px rgba(255, 145, 0, 0),
+    0 0 92px rgba(255, 166, 0, 0),
+    0 0 102px rgba(255, 136, 0, 0),
+    0 0 151px rgba(255, 208, 0, 0);
+}
+
+.index {
+    grid-area: i;
+    background-color: #303030;
+}
+
+.profilsektion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: pf;
+    margin-top: 30px;
+}
+
+.profilsektion > img {
+    border-radius: 50%;
+    max-width: 150px;
+    border: 2px dotted #f9b55f;
+    padding: 10px;
+}
+
+.om {
+    grid-area: o;
+}
+
+.ombackdrop {
+    grid-area: ob;
+    display: flex;
+}
+
+.ombackdrop > p {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    padding: 30px;
+    font-family: Comfortaa;
+}
+
+.projekter {
+    grid-area: p;
+    margin-bottom: 0px;
+}
+
+.squarepicture > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.billede1 {
+    grid-area: b1;
+    background-color: coral;
+}
+
+.billede2 {
+    grid-area: b2;
+    background-color: rgb(196, 97, 61);
+}
+
+.tekst1 {
+    grid-area: t1;
+    color: white;
+}
+
+.billede3 {
+    grid-area: b3;
+}
+
+.billede4 {
+    grid-area: b4;
+}
+
+.tekst2 {
+    grid-area: t2;
+}
+
+.billede5 {
+    grid-area: b5;
+}
+
+.billede6 {
+    grid-area: b6;
+}
+
+.tekst3 {
+    grid-area: t3;
+}
+
+.animation2 {
+    grid-area: vo;
+}
+
+.animation1 {
+    grid-area: vi;
+}
+
+.tekst4 {
+    grid-area: t4;
+}
+
+.billede7 {
+    grid-area: b7;
+}
+
+.billede8 {
+    grid-area: b8;
+}
+
+.tekst5 {
+    grid-area: t5;
+}
+
+.billede9 {
+    grid-area: b9;
+}
+
+.billede10 {
+    grid-area: b10;
+}
+
+.tekst6 {
+    grid-area: t6;
+}
+
+.kontakt {
+    grid-area: k;
+}
+
+.kontaktinfo {
+    grid-area: ki;
+    background-color: #303030;
+    display: flex;
+    color: white;
+    font-family: Comfortaa;
+    font-size: clamp(18px, 1vw, 30px);
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.orangeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(48,48,48);
+    background: linear-gradient(180deg, rgba(48,48,48,1) 35%, 
+                                        rgba(249, 182, 95, 0.315) 50%, 
+                                        rgba(48,48,48,1) 65%);
+
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+    scroll-margin-top: 60px;
+}
+
+body {
+    background-color: #303030;
+}
+
+@media only screen and (min-width: 600px) {
+    .container1 {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1080px 40px auto 40px;
+        grid-template-areas:
+        "i i i i i i"
+        "o o o o o o"
+        "pf pf ob ob ob ob"
+        "p p p p p p"
+        ;
+    } 
+
+    .container2 {
+        text-align: center;
+        display: grid;
+        row-gap: 10px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas:
+        "b1 b1 b2 b2 t1 t1"
+        "t2 t2 b3 b3 b4 b4 "
+        "b5 b5 b6 b6 t3 t3"
+        "t4 t4 vi vi vo vo"
+        "b7 b7 b8 b8 t5 t5"
+        "t6 t6 b9 b9 b10 b10"
+        ;
+    } 
+
+    .bo3 {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 40px auto 40px;
+        grid-template-areas:
+        "k k k k k k"
+        "ki ki ki ki ki ki"
+        "ba ba ba ba ba ba"
+        ;
+    } 
+
+    .profilsektion > img {
+        border-radius: 50%;
+        max-width: 450px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+    
+    .ombackdrop {
+        display: flex;
+        align-items: center;
+    }
+
+    .ombackdrop > p {
+        color: white;
+        text-align: left;
+        font-size: clamp(12px, 1.4vw, 20px);
+        padding-right: 30px;
+        padding-left: 50px;
+        padding-top: 10px;
+        font-family: Comfortaa;
+    }
+
+    .container2 div p {
+        font-size: clamp(10px, 1.2vw, 40px);
+        padding-top: 0px;
+        padding-left: 15px;
+        padding-bottom: 0px;
+        
+    }
+
+    nav {
+        padding-left: 7px;
+    }
+
+    .index {
+        margin-top: 30px;
+    }
+
+    .headline {
+        font-size: clamp(14px, 2vw, 30px);
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 0px;
+        text-align: left;
+    }
+
+    .border {
+        border-style: dotted;
+        border-color: #f9b55f;
+        border-width: 2px;
+    }
+
+    .projekter {
+        font-size: clamp(25px, 3vw, 40px);
+    }
+
+    .om {
+        font-size: clamp(25px, 3vw, 40px);
+    }
+
+    .kontakt {
+        font-size: clamp(25px, 3vw, 40px);
+    }
+
+    .container2 a {
+        color: #f9b55f;
+        font-family: Montserrat;
+        font-size: clamp(13px, 1.2vw, 30px);
+    }
+}
